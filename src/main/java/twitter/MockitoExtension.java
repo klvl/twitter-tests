@@ -17,7 +17,8 @@ public class MockitoExtension implements TestInstancePostProcessor, ParameterRes
 
     private Object getMock(Parameter parameter, ExtensionContext extensionContext) {
         Class<?> mockType = parameter.getType();
-        ExtensionContext.Store mocks = extensionContext.getStore(ExtensionContext.Namespace.create(MockitoExtension.class, mockType));
+        ExtensionContext.Store mocks = extensionContext
+                .getStore(ExtensionContext.Namespace.create(MockitoExtension.class, mockType));
         String mockName = getMockName(parameter);
 
         if (mockName != null) {
@@ -33,9 +34,11 @@ public class MockitoExtension implements TestInstancePostProcessor, ParameterRes
         if (!explicitMockName.isEmpty()) {
             return explicitMockName;
         }
-        else if (parameter.isNamePresent()) {
+
+        if (parameter.isNamePresent()) {
             return parameter.getName();
         }
+
         return null;
     }
 

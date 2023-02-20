@@ -4,7 +4,7 @@ import org.mockito.ArgumentMatcher;
 
 public class NegativeMatcher implements ArgumentMatcher<Object> {
 
-    private ArgumentMatcher<Object> originalMatcher;
+    private final ArgumentMatcher<Object> originalMatcher;
 
     public NegativeMatcher(ArgumentMatcher<Object> originalMatcher) {
         this.originalMatcher = originalMatcher;
