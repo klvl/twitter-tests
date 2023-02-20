@@ -2,7 +2,7 @@
 
 This repository contains recruitment challenge for QAA position.
 
-* Implement maximum amount of tests for a 
+* Implement maximum amount of twitter for a 
 [search endpoint](https://developer.twitter.com/en/docs/twitter-api/tweets/search/api-reference/get-tweets-search-all) 
 using a boundary values and equivalence partitioning test design techniques
 * Tests should be implemented using a real account and using stub
@@ -17,9 +17,9 @@ using a boundary values and equivalence partitioning test design techniques
   * [Spring boot](https://spring.io/projects/spring-boot)
   * [Mockito](https://site.mockito.org/)
 * It is not necessary to use all frameworks, use only those which are required for implementation
-* Mark each test or group of tests with the unique @Tag annotation 
-* All tests should be built to a Jar file and if there is a parameter, in a run command — run all tests with this key, 
-if there is no parameter — run all tests
+* Mark each test or group of twitter with the unique @Tag annotation 
+* All twitter should be built to a Jar file and if there is a parameter, in a run command — run all twitter with this key, 
+if there is no parameter — run all twitter
 
 
 ## Troubleshooting

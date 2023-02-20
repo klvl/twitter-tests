@@ -1,4 +1,4 @@
-package helpers.mockito;
+package twitter;
 
 import org.junit.jupiter.api.extension.*;
 import org.mockito.Mock;

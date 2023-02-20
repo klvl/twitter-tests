@@ -1,16 +1,9 @@
-package tests;
+package twitter;
 
-import helpers.mockito.NegativeMatcher;
-import helpers.mockito.LengthOfQueryMatcher;
-import helpers.TestParameters;
-import helpers.mockito.MockitoExtension;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
-
-import twitter.SearchField;
-import twitter.TwitterHomePage;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.*;

@@ -2,21 +2,18 @@ plugins {
     id 'java'
 }
 
-group 'twitter-api'
+group 'io.klvl'
 version '1.0'
-
-sourceCompatibility = 1.8
 
 repositories {
     mavenCentral()
-    jcenter()
 }
 
 dependencies {
-    testCompile("org.junit.jupiter:junit-jupiter-api:5.2.0")
-    testRuntime("org.junit.jupiter:junit-jupiter-engine:5.2.0")
-    testCompile "org.mockito:mockito-inline:+"
-    testCompile("org.assertj:assertj-core:3.10.0")
+    implementation 'org.junit.jupiter:junit-jupiter-api:5.9.2'
+    implementation 'org.junit.jupiter:junit-jupiter-engine:5.9.2'
+    implementation 'org.mockito:mockito-core:5.1.1'
+    implementation 'org.assertj:assertj-core:3.24.2'
 }
 
 test {
